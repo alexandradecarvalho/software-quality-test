@@ -46,7 +46,10 @@ public class SetOfNaturalsTest {
         assertEquals(7, setB.size(), "add: elements count not as expected.");
 
 
-        assertThrows(IllegalArgumentException.class, () -> {setD.add(30);}, "adding existing element didn't throw an error");
+        assertThrows(IllegalArgumentException.class, () -> setD.add(30), "adding existing element didn't throw an error");
+
+        assertThrows(IllegalArgumentException.class, () -> setB.add(10), "adding an already existing element didn't throw an error");
+
 
         
     }
@@ -56,15 +59,36 @@ public class SetOfNaturalsTest {
         int[] elems = new int[]{10, 20, -30};
 
         // must fail with exception
-        assertThrows(IllegalArgumentException.class, () -> setA.add(elems));
+        assertThrows(IllegalArgumentException.class, () -> setA.add(elems), "adding invalid elements in the array form didn't throw an error");
+
+        assertThrows(IllegalArgumentException.class, () -> setB.add(new int[]{10, 15}), "adding repeated elements in the array form didn't throw an error");
+
+        assertThrows(IllegalArgumentException.class, () -> SetOfNaturals.fromArray(elems), "adding invalid elements fromArray didn't throw an error");
     }
 
+    @Test
+    public void testSize(){
+        SetOfNaturals new_set = new SetOfNaturals();
+        assertEquals(0, new_set.size(), "Set size isn't 0 at initialization");
+        new_set.add(1);
+        int size = new_set.size();
+        assertEquals(1, size, "after 1 insertion, set size should be 1, but is " + size + " instead");
+        new_set.add(2);
+        size = new_set.size();
+        assertEquals(2, size, "after second insertion, the set's size should be 2 instead of " + size);
+    }
 
     @Test
     public void testIntersectForNoIntersection() {
         assertFalse(setA.intersects(setB), "no intersection but was reported as existing");
-
+        assertTrue(setD.intersects(setB), "existing intersection wasn't reported");
     }
 
+    @Test
+    public void testContains(){
+        assertFalse(setA.contains(1), "empty set should not contain natural element 1" );
+        assertFalse(setB.contains(1), "setB should not contain natural element 1" );
+        assertTrue(setD.contains(40), "setD should contain natural element 40");
+    }
 
 }
