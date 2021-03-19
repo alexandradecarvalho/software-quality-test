@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+euromillions-play,sets,SetOfNaturals,156,0,18,0,33,0,19,0,10,0
+euromillions-play,ui,DemoMain,57,0,2,0,16,0,3,0,2,0
+euromillions-play,euromillions,Dip,222,0,24,0,52,0,20,0,8,0
+euromillions-play,euromillions,EuromillionsDraw,87,0,10,0,19,0,9,0,4,0
+euromillions-play,euromillions,CuponEuromillions,70,0,2,0,15,0,7,0,6,0
