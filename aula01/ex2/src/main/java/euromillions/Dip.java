@@ -16,6 +16,11 @@ public class Dip {
 
     private SetOfNaturals numbers;
     private SetOfNaturals starts;
+    static final int ARRAY_OF_NUMBERS_LENGTH = 5;
+    static final int ARRAY_OF_STARS_LENGTH = 2;
+    static final int MAX_RANGE_FOR_NUMBERS = 49;
+    static final int MAX_RANGE_FOR_STARS = 9;
+
 
     public Dip() {
         numbers = new SetOfNaturals();
@@ -25,7 +30,7 @@ public class Dip {
     public Dip(int[] arrayOfNumbers, int[] arrayOfStarts) {
         this();
 
-        if (5 == arrayOfNumbers.length && 2 == arrayOfStarts.length) {
+        if (ARRAY_OF_NUMBERS_LENGTH == arrayOfNumbers.length && ARRAY_OF_STARS_LENGTH == arrayOfStarts.length) {
             numbers.add(arrayOfNumbers);
             starts.add(arrayOfStarts);
         } else {
@@ -46,15 +51,15 @@ public class Dip {
         Random generator = new Random();
 
         Dip randomDip = new Dip();
-        for (int i = 0; i < 5; ) {
-            int candidate = generator.nextInt(49) + 1;
+        for (int i = 0; i < ARRAY_OF_NUMBERS_LENGTH; ) {
+            int candidate = generator.nextInt(MAX_RANGE_FOR_NUMBERS) + 1;
             if (!randomDip.getNumbersColl().contains(candidate)) {
                 randomDip.getNumbersColl().add(candidate);
                 i++;
             }
         }
-        for (int i = 0; i < 2; ) {
-            int candidate = generator.nextInt(9) + 1;
+        for (int i = 0; i < ARRAY_OF_STARS_LENGTH; ) {
+            int candidate = generator.nextInt(MAX_RANGE_FOR_STARS) + 1;
             if (!randomDip.getStarsColl().contains(candidate)) {
                 randomDip.getStarsColl().add(candidate);
                 i++;
