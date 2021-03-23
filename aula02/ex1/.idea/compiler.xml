@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="euromillions-play" />
+        <module name="ex1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="euromillions-play" target="11" />
+      <module name="ex1" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
