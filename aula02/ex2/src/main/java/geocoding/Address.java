@@ -83,7 +83,7 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" + "road=" + road + ", cirty=" + city + ", state=" + state + ", zio=" + zip + ", houseNumber=" + houseNumber + '}';
+        return "Address{" + "road=" + road + ", city=" + city + ", state=" + state + ", zip=" + zip + ", houseNumber=" + houseNumber + '}';
     }
 
     @Override
