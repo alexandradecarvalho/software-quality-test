@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3123b95-3eb1-4987-8f9d-0ae2831356e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex2/ex2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../aula04/ex2/src/test/java/tqs/lab4/ex2/CarRestControllerTemplateIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula04/ex2/src/test/java/tqs/lab4/ex2/CarRestControllerTemplateIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/tqs/lab5/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/tqs/lab5/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/tqs/lab5/CalculatorSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/java/tqs/lab5/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/resources/cucumber.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/resources/tqs/lab5/calculator.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/tqs/lab5/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/tqs/lab5/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/test-classes/cucumber.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/test-classes/tqs/lab5/CalculatorSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/test-classes/tqs/lab5/CalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/test-classes/tqs/lab5/calculator.feature" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rQdOdQHSgxqOrbsy5zTQW0lDVZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3123b95-3eb1-4987-8f9d-0ae2831356e6" name="Default Changelist" comment="" />
+      <created>1618912217119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618912217119</updated>
+      <workItem from="1618912218176" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
