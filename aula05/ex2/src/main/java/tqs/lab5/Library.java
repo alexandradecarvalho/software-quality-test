@@ -19,7 +19,7 @@ public class Library {
         end.roll(Calendar.YEAR, 1);
 
         return store.stream().filter(book -> {
-            return Date.from(from.atZone(ZoneId.systemDefault()).toInstant()).before(Date.from(book.getPublished().atZone(ZoneId.systemDefault()).toInstant())) && end.getTime().after(Date.from(book.getPublished().atZone(ZoneId.systemDefault()).toInstant()));})
+            return Date.from(from.atZone(ZoneId.systemDefault()).toInstant()).before(Date.from(book.getPublished().atZone(ZoneId.systemDefault()).toInstant())) && Date.from(to.atZone(ZoneId.systemDefault()).toInstant()).after(Date.from(book.getPublished().atZone(ZoneId.systemDefault()).toInstant()));})
             .sorted(Comparator.comparing(Book::getPublished).reversed()).collect(Collectors.toList());
     }
 }

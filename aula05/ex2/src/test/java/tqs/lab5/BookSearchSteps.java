@@ -24,18 +24,32 @@ public class BookSearchSteps {
     }
 
     @Given("a book with the title {string}, written by {string} published in {int} March {int}")
-    public void addNewBook(final String title, final String author,final LocalDateTime published){
-        Book book = new Book (title, author, published);
+    public void addNewBook(final String title, final String author,final int day, final int year){
+        Book book = new Book (title, author, iso8601Date(String.valueOf(year),"03",String.valueOf(day)));
+        library.addBook(book);
+    }
+
+    @Given("another book with the title {string}, written by {string} published in {int} August {int}")
+    public void addNewBookAugust(final String title, final String author,final int day, final int year){
+        Book book = new Book (title, author, iso8601Date(String.valueOf(year),"08",String.valueOf(day)));
+        library.addBook(book);
+    }
+
+    @Given("another book with the title {string}, written by {string} published in {int} January")
+    public void addNewBookJanuary(final String title, final String author,final int day){
+        Book book = new Book (title, author, iso8601Date(String.valueOf(2000),"01",String.valueOf(day)));
         library.addBook(book);
     }
 
     @When("the customer searches for books published between {int} and {int}")
-    public void setSearchParameters(final LocalDateTime from, final LocalDateTime to){
-        result = library.findBooks(from, to);
+    public void setSearchParameters(final int from, final int to){
+        result = library.findBooks(iso8601Date(String.valueOf(from),"01","01"), iso8601Date(String.valueOf(to), "12", "31"));
     }
 
     @Then("{int} books should have been found")
     public void verifyAmountOfBooksFound(final int booksFound){
+        System.out.println(result.size());
+        System.out.println(booksFound);
         assertThat(String.valueOf(result.size()), Boolean.valueOf(String.valueOf(equalTo(booksFound))));
 
     }
